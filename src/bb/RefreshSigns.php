@@ -2,7 +2,7 @@
 
 namespace bb;
 
-class RefreshSigns extends PluginTask {
+class RefreshSigns {
     
 	public function __construct($plugin)
 	{
