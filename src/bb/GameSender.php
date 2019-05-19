@@ -9,7 +9,7 @@ class GameSender extends PluginTask {
 		$this->plugin = $plugin;
                 $this->prefix = $this->plugin->prefix;
         
-        public function getResetmap() {
+        function getResetmap() {
         Return new ResetMap($this);
         }
   
