@@ -905,5 +905,6 @@ class GameSender extends PluginTask {
 		$config->save();
         	$points->save();
         	$time = 470;
+		}
 	}
 }
