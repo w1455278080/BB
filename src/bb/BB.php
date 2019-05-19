@@ -58,8 +58,8 @@ class BB extends PluginBase implements Listener {
 		$config->save();
                 $slots = new Config($this->getDataFolder() . "/slots.yml", Config::YAML);
                 $slots->save();
-		$this->getServer()->getScheduler()->scheduleRepeatingTask(new GameSender($this), 20);
-		$this->getServer()->getScheduler()->scheduleRepeatingTask(new RefreshSigns($this), 20);
+		$this->getScheduler()->scheduleRepeatingTask(new GameSender($this), 20);
+		$this->getScheduler()->scheduleRepeatingTask(new RefreshSigns($this), 20);
 	}
         
         public function onDisable() {
