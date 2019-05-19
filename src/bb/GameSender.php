@@ -8,8 +8,6 @@ class GameSender {
 	{
 		$this->plugin = $plugin;
                 $this->prefix = $this->plugin->prefix;
-		parent::__construct($plugin);
-	}
         
         public function getResetmap() {
         Return new ResetMap($this);
