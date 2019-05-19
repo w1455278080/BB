@@ -13,7 +13,7 @@ class GameSender extends PluginTask {
         Return new ResetMap($this);
         }
   
-	public function onRun($tick)
+	function onRun($tick)
 	{
 		$config = new Config($this->plugin->getDataFolder() . "/config.yml", Config::YAML);
                 $slots = new Config($this->plugin->getDataFolder() . "/slots.yml", Config::YAML);
