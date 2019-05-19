@@ -1,0 +1,14 @@
+name: BuildBattle
+main: bb\BB
+api: [3.0.6]
+version: 1.4.0
+author: myval2
+description: BuildBattle plugin
+commands: 
+    bb:
+        usage: /bb <make>
+        description: CreateGame
+permissions:
+    bb.op:
+        default: op
+  
