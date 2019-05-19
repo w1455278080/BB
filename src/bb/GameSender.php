@@ -907,4 +907,3 @@ class GameSender extends PluginTask {
         	$time = 470;
 	}
 }
-                                                          
