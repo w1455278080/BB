@@ -58,8 +58,8 @@ class BB extends PluginBase implements Listener {
 		$config->save();
                 $slots = new Config($this->getDataFolder() . "/slots.yml", Config::YAML);
                 $slots->save();
-		$this->getScheduler()->scheduleRepeatingTask(new class extends \pocketmine\scheduler\Task{ public function GameSender($this), 20);
-		$this->getScheduler()->scheduleRepeatingTask(new class extends \pocketmine\scheduler\Task{ public function RefreshSigns($this), 20);
+		$this->getScheduler()->scheduleRepeatingTask(new class extends \pocketmine\scheduler\Task{ public function GameSender($this); 20);
+		$this->getScheduler()->scheduleRepeatingTask(new class extends \pocketmine\scheduler\Task{ public function RefreshSigns($this); 20);
 	}
         
         public function onDisable() {
