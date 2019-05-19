@@ -2,7 +2,7 @@
 
 namespace bb;
 
-class GameSender {
+class GameSender extends PluginTask {
     public $prefix = "";
 	public function __construct($plugin)
 	{
